@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;700;900&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    width: 100%;
+    height: 30%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(146deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 12%, rgba(0, 212, 255, 1) 100%);
+}
+
+.logo__signin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    height: 30%;
+}
+
+.logo {
+    color: white;
+    font-size: 2rem;
+}
+
+.logo span {
+    color: red;
+    font-weight: 700;
+}
+
+.signin {
+    color: white;
+    text-decoration: none;
+}
+
+.signin:hover {
+    color: red;
+    font-weight: 500;
+}
+
+.search_window {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+}
+
+#search_input {
+    height: 30%;
+    width: 80%;
+}
+
+.main_page {
+    height: 70%;
+    width: 100vw;
+}
+
+.filter__chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin-bottom: 5rem;
+}
+
+.chart {
+    background-color: tomato;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.filter {
+    margin-left: 2rem;
+}
+
+#book__filter {
+    text-decoration: none;
+    border: none;
+}
+
+.filter span {
+    margin-right: 1rem;
+}
+
+.book__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1;
+    gap: 5rem;
+    width: 100%;
+    padding: 2rem;
+}
+
+.book__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+    width: 150px;
+}
+
+.book__card__img {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    height: 250px;
+    width: 150px;
+}
+
+.book__card__author {
+    font-weight: 500;
+}
+
+.book__card__title {
+    font-size: 0.7rem;
+}
+
+.book__card__price {
+    color: tomato;
+}
+
+.book_card_button {
+    width: fit-content;
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 800;
+    line-height: 0.7rem;
+    min-height: 2rem;
+    outline: 0;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+.book_card_button:hover,
+.book_card_button:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF4742;
+}
+
+.book_card_button:active {
+    opacity: .5;
+}
