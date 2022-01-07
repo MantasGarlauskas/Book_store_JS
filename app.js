@@ -42,3 +42,54 @@ fetch('https://in3.dev/knygos/')
         data = strukura;
         render();
     });
+
+const selectButton = document.querySelector('#book__filter')
+
+selectButton.addEventListener('change', () => {
+    if (selectButton.value == 'name') {
+        data.sort((a, b) => {
+            if (a.author > b.author) {
+                return 1;
+            } else if (a.author < b.author) {
+                return -1;
+            } else {
+                return 0;
+            }
+
+        });
+
+    } else if (selectButton.value == 'name2') {
+        data.sort((a, b) => {
+            if (a.author > b.author) {
+                return -1;
+            } else if (a.author < b.author) {
+                return 1;
+            } else {
+                return 0;
+            }
+
+        });
+
+    } else if (selectButton.value == 'price') {
+        data.sort((a, b) => {
+            if (a.price > b.price) {
+                return 1;
+            } else if (a.price < b.price) {
+                return -1;
+            } else {
+                return 0;
+            }
+        });
+    } else if (selectButton.value == 'price2') {
+        data.sort((a, b) => {
+            if (a.price > b.price) {
+                return -1;
+            } else if (a.price < b.price) {
+                return 1;
+            } else {
+                return 0;
+            }
+        });
+    }
+    render();
+});
